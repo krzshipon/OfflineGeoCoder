@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/title_geocoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Offline Geocoder "
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_latitude_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_geocoder"
+        android:hint="Latitude"
+        android:text="23.6850"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_longitude_input"
+        android:layout_width="match_parent"
+        android:layout_below="@id/et_latitude_input"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:text="90.3563"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_geocode"
+        android:layout_width="match_parent"
+        android:layout_below="@id/et_longitude_input"
+        android:layout_height="wrap_content"
+        android:text="Geocode"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_show_result"
+        android:layout_width="match_parent"
+        android:layout_below="@id/button_geocode"
+        android:layout_height="wrap_content"
+        android:text="Not Geocoded yet"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
