@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/select_language"
+        android:orderInCategory="300"
+        android:title="language "
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/lang_en"
+                android:title="English">
+            </item>
+
+            <item
+                android:id="@+id/lang_ja"
+                android:title="japanese">
+            </item>
+
+            <item
+                android:id="@+id/lang_zh"
+                android:title="Chinese">
+
+            </item>
+            <item
+                android:id="@+id/lang_ko"
+                android:title="Korean">
+
+            </item>
+
+            <item
+                android:id="@+id/lang_de"
+                android:title="German">
+
+            </item>
+
+            <item
+                android:id="@+id/lang_es"
+                android:title="Spanish">
+
+            </item>
+            <item
+                android:id="@+id/lang_fr"
+                android:title="French">
+
+            </item>
+            <item
+                android:id="@+id/lang_it"
+                android:title="Italian">
+
+            </item>
+
+
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/root_layout"
     tools:context=".MainActivity">
     <TextView
         android:id="@+id/title_geocoder"
@@ -16,11 +17,23 @@
         android:textSize="25sp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/language_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_geocoder"
+        android:text="English "
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
     <EditText
         android:id="@+id/et_latitude_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_geocoder"
+        android:layout_below="@id/language_tv"
         android:hint="Latitude"
         android:text="23.6850"
         android:layout_marginTop="50dp"
@@ -47,11 +60,17 @@
         android:textColor="@color/colorAccent"
         android:textSize="25sp"
         android:textStyle="bold"/>
-
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button_geocode"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
     <TextView
         android:id="@+id/tv_show_result"
         android:layout_width="match_parent"
-        android:layout_below="@id/button_geocode"
+        android:layout_below="@id/progressbar"
         android:layout_height="wrap_content"
         android:text="Not Geocoded yet"
         android:gravity="center"
@@ -59,6 +78,8 @@
         android:textColor="@color/colorPrimary"
         android:textSize="25sp"
         android:textStyle="bold"/>
+
+
 
 
 

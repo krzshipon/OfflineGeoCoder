@@ -50,7 +50,7 @@ public class GeoName extends KDNodeComparator<GeoName> {
     public String country;
 
     GeoName(String data) {
-        String[] names = data.split("\t");
+        String[] names = data.split(",");
         name = names[1];
         majorPlace = names[6].equals("P");
         latitude = Double.parseDouble(names[4]);
